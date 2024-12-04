@@ -53,7 +53,7 @@ export const register = async (payload) => {
     password: hashPassword,
   });
 
-   const templateSource = await fs.readFile(emailTemplatePath, 'utf-8');
+   /*const templateSource = await fs.readFile(emailTemplatePath, 'utf-8');
 
   const template = Handlebars.compile(templateSource);
 
@@ -69,7 +69,7 @@ export const register = async (payload) => {
      html,
    };
 
-  await sendEmail(verifyEmail);
+  await sendEmail(verifyEmail);*/
 
   return newUser;
 };
